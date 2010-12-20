@@ -29,6 +29,8 @@ package
 		override public function startup():void
 		{
 			//Mediators
+			
+			//ciccio ciccio
 			mediatorMap.mapView(ciccio, pippoMediator);
 			mediatorMap.mapView(myButton,myButtonMediator);
 			

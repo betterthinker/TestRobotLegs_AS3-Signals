@@ -5,8 +5,21 @@
 	<s:layout>
 		<s:VerticalLayout gap="5"/>
 	</s:layout>
+	<s:states>
+		<s:State name="default"/>    
+		<s:State name="Register"/>
+	</s:states>
 	<fx:Declarations>
+			<s:Transition fromState="default">
+				<s:Sequence>
+					<s:Fade duration="500" target="{labelTxt}"/>
+				</s:Sequence>
+			</s:Transition>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:Label id="labelTxt" text="nothing received"/>
+	<s:Label id="labelTxt"
+			 text.default="nothing received"
+			 text.Register="Registered" 
+			 mouseOver="currentState='Register'"
+			 mouseOut="currentState='default'"/>
 </s:Group>

@@ -1,7 +1,5 @@
 package
 {
-	import com.adobe.serialization.json.JSONDecoder;
-	
 	import commands.MyCommand;
 	
 	import components.ciccio;
@@ -12,8 +10,6 @@ package
 	
 	import mediators.myButtonMediator;
 	import mediators.pippoMediator;
-	
-	import mx.rpc.http.SerializationFilter;
 	
 	import org.robotlegs.mvcs.SignalContext;
 	
